@@ -5,7 +5,7 @@ PR_JOBS_SYMBOL="${PR_JOBS_SYMBOL=""}"
 _pr_jobs() {
   
   
-  local jobs=$( jobs -d | awk '!/pwd/' | wc -l | tr -d " " )
+  local jobs=$( jobs | wc -l )
   
   
   if [[ $jobs -gt 0 ]] ; then
