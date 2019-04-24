@@ -1,6 +1,6 @@
-# Plugin for ZSH who display background jobs info
+# Plugin for ZSH which will display infromation about background jobs
 
-Plugin will create a global variable that can be displayed in prompts. 
+This plugin will create a global variable that can be displayed in prompts with information about background jobs. 
 
 ### Example
 
@@ -8,7 +8,7 @@ Plugin will create a global variable that can be displayed in prompts.
 PROMPT='$pr_jobs ...REST OF PROMPT'
 ```
 
-This plugin made to be fast. It runs in background and update information only if need.
+This plugin is made to be fast. It runs in the background and updates information only when needed.
 
 ## Installation
 
