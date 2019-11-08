@@ -5,7 +5,7 @@
 DEPENDENCES_ZSH+=( zpm-zsh/colors )
 
 if (( $+functions[zpm] )); then
-  zpm zpm-zsh/colors
+  zpm zpm-zsh/colors,inline
 fi
 
 _pr_jobs() {
