@@ -9,9 +9,7 @@ if (( $+functions[zpm] )); then
 fi
 
 _pr_jobs() {
-  local jobs=$( jobs | wc -l )
-  
-  if [[ $jobs -gt 0 ]] ; then
+  if [[ -n "$(jobs)" ]] ; then
     pr_jobs="$PR_JOBS_PREFIX%{$c[blue]$c_bold$c_dim%}$PR_JOBS_SYMBOL%{$c_reset%}$PR_JOBS_SUFFIX"
   else
     pr_jobs=''
