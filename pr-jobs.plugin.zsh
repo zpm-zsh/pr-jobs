@@ -16,4 +16,5 @@ _pr_jobs() {
   fi
 }
 
-precmd_functions+=(_pr_jobs)
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd _pr_jobs
